@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zdNui/40618EcsERK8qSs08wqSMc1Zb7vH4w8J8DrlY=",
+  "Source": "NASAData_API",
+  "BasePath": "_content/NASAData_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

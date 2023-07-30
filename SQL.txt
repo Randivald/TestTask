@@ -1,0 +1,21 @@
+CREATE SCHEMA `nasadb` ;
+
+CREATE TABLE `nasadb`.`meteorites` (
+  `Id` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  `Nametype` VARCHAR(45) NULL,
+  `Recclass` VARCHAR(45) NULL,
+  `Mass` DOUBLE NULL,
+  `Fall` VARCHAR(45) NULL,
+  `Year` DATETIME NULL,
+  `Type` VARCHAR(45) NULL,
+  `Lat` DOUBLE NULL,
+  `Lon` DOUBLE NULL,
+  PRIMARY KEY (`Id`));
+
+
+ALTER TABLE `nasadb`.`meteorites` 
+ADD INDEX `indx_year` (`Year` ASC) INVISIBLE,
+ADD INDEX `indx_recclass` (`Year` ASC, `Recclass` ASC) INVISIBLE,
+ADD INDEX `indx_name` (`Year` ASC, `Name` ASC) INVISIBLE;
+
